@@ -1,0 +1,121 @@
+How to Install Parrot OS in Virtual Box (Windows10)
+
+Step1: Download parrot os 
+Tester-  https://download.parrot.sh/parrot/iso/4.11.2/Parrot-security-4.11.2_amd64.iso
+General Purpose- https://download.parrot.sh/parrot/iso/4.11.2/Parrot-kde-home-4.11.2_amd64.iso 
+
+Step2: Download and install Virtual Box
+Link-  https://download.virtualbox.org/virtualbox/6.1.22/VirtualBox-6.1.22-144080-Win.exe
+
+Step3: Open VirtualBox-6 and follow the steps
+
+>>Create New Machine
+Name- eg. parrot
+(Type)- Linux
+Version- Debian64 (From Drop Down Menu)
+
+>>Memories Size- Min 2GB 
+Recomended is 3GB
+
+>> Hard Disk
+Create VIrtual hard Disk ( 2nd Opt.)
+>> Hard Disk Type
+Virtual hard Disk
+>> Storage On Physical HDD
+Dynamically Allocated
+
+>> FIle Location and Size
+Location-- leave default
+Size- Min 10GB
+i Recomend 20 gb 
+Step4: Click on parrot security os
+>Settings
+	>General
+			>Advance
+				> Shared Clipboard- Bidirectional
+				> Drag'n Drop - Bidirectional
+				
+	>System
+			>Processor
+						>2
+						if wrong(Invalid) setting dectected
+	>Display
+			>Screen 
+					Video Memories --max what you want
+	>Storage
+			>Controller IDE
+							>Empty
+									>Attributes
+												Optical Drive
+															>Choose a Disk (ISO)
+	>USB
+		>USB 3.0
+		(leave Defrault if not there)
+		
+Step5- Click on Start
+Follow Steps---
+
+if there is problem occure re attached thyre iso file 
+
+
+click on >install
+		 >install GTK
+		 >Language -Preffere English(US)
+		 >US 
+		 >American English
+		 
+		 >No(As Default)
+
+
+as you seen there was some technical problem
+
+Then use Alternative
+
+Step6: Live installation
+
+>Live
+>Wait....
+>Select Time and date 
+>Location
+> Name, User name, Password
+>Erace  Option  (it will create Swap Area)
+install
+Wait.........it will takle several minutes
+Wait.........
+Wait.........Wait.........Wait.........
+Wait.........Wait.........
+Wait.........
+
+
+Yeah!! Installed but 
+there is problem of full screen
+
+go to 
+>Device 
+	>insert guest
+		> a folder will open of guest image ...copy all component past it into Dolphin(File Explorer)
+				>Document >New Folder > Guest Addition
+				
+				
+>>Now open terminal
+
+ls 
+cd Documents
+cd GuestAddition
+ls
+chmod +x VBoxLinuxAdditions.run
+sudo sh ./VBoxLinuxAdditions.run
+
+> Enter Password
+reboot
+
+See Now Full Screen 
+
+To go full screen  
+press and hold Right side's key       <Ctrl> + F
+thanks for watchning
+
+
+Keep Learning
+   
+eNext Technology
